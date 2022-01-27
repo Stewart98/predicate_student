@@ -20,6 +20,14 @@ int main()
     cout<<"Enter the marks you obtain in the exam:";
     cin>>marks;
     }
+    else if (predicate_marks >= 75)
+    {
+        cout << " You qualified with a distiction " << endl;
+    }
+    else if (predicate_marks < 40)
+    { 
+        cout << " You do not qualify to write this exam " << endl;
+    }
     
 
     return 0;
