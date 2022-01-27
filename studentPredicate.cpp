@@ -24,7 +24,12 @@ int main()
              cout<<"Enter the marks you obtain in the exam:" << endl;
              cin>> marks;
              finalMark = predicate_marks + ( marks / 2 );
-             cout << " your final mark is " << finalMark << "%" << endl;
+             if( finalMark >= 49 && finalMark <= 100 )
+             {
+                 cout << " you pass, your final mark is " << finalMark << "%" << endl;
+             }
+             else
+                 cout << " you failed, your final mark is " << finalMark << "%" << endl;
          } 
          else 
          { 
@@ -33,6 +38,6 @@ int main()
          }
     }
     
-
+    system("pause");
     return 0;
 }
