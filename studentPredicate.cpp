@@ -29,6 +29,23 @@ int main()
              {
                  cout << " you pass, your final mark is " << finalMark << "%" << endl;
              }
+             
+          
+             if(finalMark >= 75 && finalMark <= 100)
+                     {
+                     cout<<"Congratulations you have obtained a distinction pass\n\n";
+                     }
+                 
+               else if(finalMark >= 60 && finalMark <= 74)
+                      {
+                      cout<<"You passed with a very good performance\n\n";
+                      }
+                 
+               else if(finalMark >= 50 && finalMark <=59)
+                        {
+                        cout<<"You obtained a good performance pass\n\n";
+                        }
+             
              else
                  cout << " you failed, your final mark is " << finalMark << "%" << endl;
          } 
