@@ -9,15 +9,16 @@ int main()
     int marks,predicate_marks ,test1,test2;
     int i = 0, finalMark;
    
+    
+    
+    for( int i = 0; i <= 5; i++)
+    {
     cout<<"Welcome to TUT’s exam portal!!"<<endl;
     cout<<"Enter your test 1 marks:" << endl;
     cin>>test1;
     cout<<"Enter your test 2 marks:" << endl;
     cin>>test2;
     predicate_marks=(test1+test2)/2;
-    
-    for( int i = 0; i <= 5; i++)
-    {
          if( predicate_marks >= 40 )
          {
              cout<<"you have qualified to write exam with "<< predicate_marks << "%" <<endl;
