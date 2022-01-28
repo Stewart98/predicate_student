@@ -23,7 +23,7 @@ int main()
              cout<<"you have qualified to write exam with "<< predicate_marks << "%" <<endl;
              cout<<"Enter the marks you obtain in the exam:" << endl;
              cin>> marks;
-             finalMark = predicate_marks + ( marks / 2 );
+             finalMark = (predicate_marks +  marks ) /2;
              if( finalMark >= 49 && finalMark <= 100 )
              {
                  cout << " you pass, your final mark is " << finalMark << "%" << endl;
