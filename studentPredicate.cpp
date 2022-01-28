@@ -6,7 +6,7 @@ int main()
 {
     // data type
     
-    int marks,predicate_marks ,test1,test2, assess1, ssess2, total;
+    int marks,predicate_marks ,test1,test2, assess1, assess2, total;
     int i = 0, finalMark;
    
     
@@ -19,9 +19,9 @@ int main()
     cout<<"Enter your test 2 marks:" << endl;
     cin>>test2;
     cout<<"Enter your Assessment 1 marks:" << endl;
-    cin>>test2;
+    cin>> assess1;
     cout<<"Enter your Assessment 2 marks:" << endl;
-    cin>>test2;
+    cin>> assess2;
         
         
     total=test1+test2+assess1+assess2;  
