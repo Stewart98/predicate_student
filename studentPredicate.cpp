@@ -24,8 +24,13 @@ int main()
     cin>> assess2;
         
         
-    total=test1+test2+assess1+assess2;  
-    predicate_marks=(total)/4;
+    //Calculating predicate     
+    testMark1=(test1*0.3);
+    testMark2=(test2*0.3);
+    assessMark1=(assess1*0.2);
+    assessMark2=(assess2*0.2);
+    predicate_marks=testMark1+testMark2+assessMark1+assessMark2; 
+        
          if( predicate_marks >= 40 )
          {
              cout<<"You have qualified to write exam with "<< predicate_marks << "%" <<endl;
