@@ -7,6 +7,7 @@ int main()
     // data type
     
     int marks,predicate_marks ,test1,test2, assess1, assess2, total;
+    double testMark1, testMark2, assessMark1, assessMark2;
     int i = 0, finalMark;
    
     
