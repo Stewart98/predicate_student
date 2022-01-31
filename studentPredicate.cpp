@@ -40,7 +40,7 @@ int main()
              finalMark = (predicate_marks +  marks ) /2;
              if( finalMark >= 49 && finalMark <= 100 )
              {
-                 cout << "Congratulations! you have passed, your final mark is " << finalMark << "%." << endl;
+                 cout << "Congratulations! you have passed, your final mark is " << finalMark << "%." << endl<<endl;
              }
              else
                  cout << "You failed, your final mark is " << finalMark << "%." << endl;
