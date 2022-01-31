@@ -11,7 +11,7 @@ int main()
    
     
     
-    for( int i = 0; i < 3; i++)
+    for( int i = 0; i < 4; i++)
     {
     cout<<"Welcome to TUT’s exam portal!!"<<endl;
     cout<<"Enter your test 1 marks:" << endl;
