@@ -11,7 +11,7 @@ int main()
    
     
     
-    for( int i = 0; i <= 5; i++)
+    for( int i = 0; i <= 3; i++)
     {
     cout<<"Welcome to TUT’s exam portal!!"<<endl;
     cout<<"Enter your test 1 marks:" << endl;
@@ -25,10 +25,7 @@ int main()
              cout<<"Enter the marks you obtain in the exam:" << endl;
              cin>> marks;
              finalMark = (predicate_marks +  marks ) /2;
-             if( finalMark >= 49 && finalMark <= 100 )
-             {
-                 cout << " you pass, your final mark is " << finalMark << "%" << endl;
-             }
+             
              
           
              if(finalMark >= 75 && finalMark <= 100)
