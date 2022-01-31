@@ -11,7 +11,7 @@ int main()
    
     
     
-    for( int i = 0; i <= 3; i++)
+    for( int i = 0; i < 3; i++)
     {
     cout<<"Welcome to TUT’s exam portal!!"<<endl;
     cout<<"Enter your test 1 marks:" << endl;
@@ -21,6 +21,7 @@ int main()
     predicate_marks=(test1+test2)/2;
          if( predicate_marks >= 40 )
          {
+             do{
              cout<<"you have qualified to write exam with "<< predicate_marks << "%" <<endl;
              cout<<"Enter the marks you obtain in the exam:" << endl;
              cin>> marks;
@@ -43,8 +44,14 @@ int main()
                         cout<<"You obtained a good performance pass\n\n";
                         }
              
-             else
+             else if(finalMark<=44)
+             {
                  cout << " you failed, your final mark is " << finalMark << "%" << endl;
+             }
+             else{
+                 cout<<"you qualify to re-write"<<endl;
+             }
+         }while(finalMark>=45&&finalMark<=49);
          } 
          else 
          { 
