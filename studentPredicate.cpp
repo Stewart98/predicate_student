@@ -45,27 +45,31 @@ int main()
           
              if(finalMark >= 75 && finalMark <= 100)
                      {
-                     cout<<"Congratulations you have obtained a distinction pass\n\n";
+                     cout<<"Congratulations you have obtained a distinction pass\n"
+                         <<"\nFinal Mark: "<<finalMark<<"\n\n";
                      }
                  
                else if(finalMark >= 60 && finalMark <= 74)
                       {
-                      cout<<"You passed with a very good performance\n\n";
+                      cout<<"You passed with a very good performance\n"
+                          <<"\nFinal Mark: "<<finalMark<<"\n\n";
                       }
                  
                else if(finalMark >= 50 && finalMark <=59)
                         {
-                        cout<<"You obtained a good performance pass\n\n";
+                        cout<<"You obtained a good performance pass\n"
+                            <<"Final Mark: "<<finalMark <<"\n\n";
                         }
              
              else if(finalMark<=44)
              {
-                 cout << " you failed, your final mark is " << finalMark << "%" << endl;
+                 cout << "You failed, your final mark is " << finalMark << "%" << endl;
              }
              else{
                  cout<<"you qualify to re-write"<<endl;
              }
          }while(finalMark>=45&&finalMark<=49);
+         }
          else 
          { 
              cout << "You do not qualify to write this exam." << endl;
