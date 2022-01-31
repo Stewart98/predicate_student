@@ -6,7 +6,8 @@ int main()
 {
     // data type
     
-    int marks,predicate_marks ,test1,test2;
+    int marks,predicate_marks ,test1,test2, assess1, assess2, total;
+    double testMark1, testMark2, assessMark1, assessMark2;
     int i = 0, finalMark;
    
     
@@ -18,9 +19,22 @@ int main()
     cin>>test1;
     cout<<"Enter your test 2 marks:" << endl;
     cin>>test2;
-    predicate_marks=(test1+test2)/2;
+    cout<<"Enter your Assessment 1 marks:" << endl;
+    cin>> assess1;
+    cout<<"Enter your Assessment 2 marks:" << endl;
+    cin>> assess2;
+        
+        
+    //Calculating predicate     
+    testMark1=(test1*0.3);
+    testMark2=(test2*0.3);
+    assessMark1=(assess1*0.2);
+    assessMark2=(assess2*0.2);
+    predicate_marks=testMark1+testMark2+assessMark1+assessMark2; 
+        
          if( predicate_marks >= 40 )
          {
+
              do{
              cout<<"you have qualified to write exam with "<< predicate_marks << "%" <<endl;
              cout<<"Enter the marks you obtain in the exam:" << endl;
@@ -52,11 +66,10 @@ int main()
                  cout<<"you qualify to re-write"<<endl;
              }
          }while(finalMark>=45&&finalMark<=49);
-         } 
          else 
          { 
-             cout << " You do not qualify to write this exam " << endl;
-             cout<< "sorry, try again next semester"<<endl;
+             cout << "You do not qualify to write this exam." << endl;
+             cout<< "Sorry, try again next semester"<<endl;
          }
     }
     
